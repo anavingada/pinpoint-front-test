@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Goco Group jobs page as part of Pinpoint's front test.">
+    <meta name="author" content="Ana Vingada">
+
+    <link rel="icon" href="assets/images/goco_favicon.png" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>GoCo - Jobs</title>
+</head>
+
+<body>
+    <header>
+        <div id="navigation" class="ctn-navigation">
+            <section class="ctn-logo">
+                <img src="assets/images/goco_logo.png">
+            </section>
+            <section class="ctn-menus">
+                <nav id="nav"></nav>
+            </section>
+            <section class="ctn-view-jobs">
+                <button id="btn-view-jobs" onclick="location.href='index.html'" type="button">
+                    <p class="btn-call-action">View Jobs</p>
+                </button>
+            </section>
+            <a href="javascript:void(0)" class="btn-hamburguer" onclick="toggleNav()">
+                <i id="icon-menu" class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="ctn-banner">
+            <div class="position-relative position-middle text-center">
+                <h1>Find your next job with GoCo</h1>
+                <button onclick="location.href='index.html'" type="button">
+                    <p class="btn-call-action">Go for it</p>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+        <section class="ctn-company" id="company">
+        </section>
+        <section class="ctn-glassdoor text-center">
+            <img src="assets/images/glassdoor_logo.png" />
+            <h3>"Dynamic, industry-leading environment with great benefits"</h3>
+            <p>Former Employee, Content Specialist in Newport, Wales</p>
+            <small>A selected review from Glassdoor, October 2020.</small>
+            <div>
+                <button onclick="location.href='index.html'" type="button">
+                    <p class="btn-call-action">More Reviews</p>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+        <section class="ctn-testimony">
+            <img class="width100" src="assets/images/alex.png" />
+            <div class="position-absolute">
+                <blockquote>"We support our people not only through their professional development but also with their
+                    work-life balance, health and wellbeing."</blockquote>
+                <p>Alex Currie</p>
+                <p class="paragraph">Chief People Officer</p>
+            </div>
+        </section>
+        <section class="ctn-more">
+            <section>
+                <div class="position-absolute position-middle text-center">
+                    <h3>Find out what's in it for you</h3>
+                    <button onclick="location.href='index.html'" type="button">
+                        <p class="btn-call-action">Find out more</p>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </section>
+            <section>
+                <div class="position-absolute position-middle text-center">
+                    <h3>Thinking about applying for a job?</h3>
+                    <button onclick="location.href='index.html'" type="button">
+                        <p class="btn-call-action">Search Jobs</p>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="ctn-slogan">
+            <h4>We hire our talent directly. No recruitment agencies, sorry.</h4>
+        </section>
+        <section class="ctn-info">
+            <p>Copyright &copy; 2020 Gocompare.com Limited All Rights Reserved</p>
+            <p>Gocompare.com Limited is registered in England and Wales (Company No. 5799376).</p>
+            <p>Registered office: Imperial House, Imperial Way, Newport, Gwent, NP10 8UH, United Kingdom</p>
+            <a href="index.html">Modern Slavery Statement</a>
+            <a href="index.html">Cookie Policy</a>
+            <a href="index.html">Terms and Conditions</a>
+        </section>
+        <section class="ctn-ownsership">
+            <div id="privacy">
+                <p>PRIVACY POLICY</p>
+                <i id="icon-linkedin" class="fab fa-linkedin width100 height100"></i>
+            </div>
+            <div id="power">
+                <p>POWERED BY PINPOINT</p>
+            </div>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="logic.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

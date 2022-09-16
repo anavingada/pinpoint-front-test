@@ -1,0 +1,476 @@
+/* Fonts source */
+@font-face {
+    font-family: MuseoRounded100;
+    src: url("assets/fonts/MuseoSansRounded100.otf");
+}
+
+@font-face {
+    font-family: MuseoRounded700;
+    src: url("assets/fonts/MuseoSansRounded700.otf");
+}
+
+
+/* General */
+* {
+    box-sizing: border-box;
+    font-family: MuseoRounded100, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #2fa38e;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #2fa38e;
+    cursor: pointer;
+}
+
+button:not(#btn-view-jobs) {
+    min-width: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-call-action {
+    margin: 0;
+    font-weight: bold;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.width100 {
+    width: 100%;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Headings and text tags */
+h1, h2, h3, h4 {
+    font-family: MuseoRounded700, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.paragraph {
+    font-size: 14px;
+}
+
+small {
+    font-size: 12px;
+}
+
+
+/* Icons */
+#icon-linkedin {
+    color: #0e76a8;
+    max-width: 15px;
+    max-height: 15px;
+    margin: auto 50px;
+}
+
+
+/* Header */
+header {
+    min-height: 120px;
+    background-color: #ffffff;
+    display: grid;
+    height: 100%;
+}
+
+.ctn-logo {
+    margin: auto 40px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.ctn-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ctn-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ctn-navigation .btn-hamburguer {
+    display: none;
+}
+
+nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    margin: 10px 20px;
+    font-family: MuseoRounded700, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.ctn-view-jobs {
+    margin: auto 40px;
+    max-width: 150px;
+    width: 100%;
+}
+
+#btn-view-jobs {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: right;
+    float: right;
+}
+
+
+/* Main - General */
+.ctn-company, .ctn-glassdoor, .ctn-more {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5rem auto !important;
+    width: 90%;
+}
+
+/* Main - Banner section */
+.ctn-banner {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 550px;
+    background-image: url("assets/images/banner.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Main - Company section */
+.ctn-company section {
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ctn-company div {
+    width: 40%;
+}
+
+.ctn-company section:nth-child(2) div:first-child {
+    order: 2;
+}
+
+.ctn-company section:nth-child(2) div:nth-child(2) {
+    order: 1;
+}
+
+.ctn-company img {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.ctn-company section>div:first-child {
+    padding: 40px;
+}
+
+.ctn-journey {
+    width: 100%;
+    max-width: 691px;
+}
+
+.ctn-journey>div {
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 25% !important;
+}
+
+.ctn-journey div p:not(.btn-call-action) {
+    font-size: 18px;
+    font-family: MuseoRounded700, sans-serif;
+}
+
+/* Main - Glassdoor section */
+.ctn-glassdoor img {
+    margin-bottom: 1rem;
+    min-width: 180px;
+}
+
+.ctn-glassdoor p:not(.btn-call-action) {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.ctn-glassdoor div {
+    margin: 20px auto;
+}
+
+.ctn-glassdoor button {
+    background-color: #0CAA41;
+    border: 1px solid #0CAA41;
+}
+
+/* Main - Testimony section */
+.ctn-testimony {
+    margin-bottom: 5rem !important;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+.ctn-testimony div {
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+}
+
+.ctn-testimony div blockquote,
+.ctn-testimony div p:not(:last-child) {
+    font-size: 16px;
+    font-family: MuseoRounded700, sans-serif;
+}
+
+/* Main - More section */
+.ctn-more {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.ctn-more section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    max-width: 500px;
+    box-shadow: 0px 0px 20px 10px #eaeaea;
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    min-height: 250px;
+    padding: 20px;
+}
+
+.ctn-more h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Footer  */
+footer {
+    max-width: 1400px;
+    margin: 5rem auto 0 auto;
+    width: 90%;
+}
+
+.ctn-slogan {
+    margin-bottom: 3rem;
+}
+
+.ctn-info {
+    display: grid;
+}
+
+.ctn-info>* {
+    margin: 0;
+    line-height: 22px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ctn-ownsership {
+    margin-top: 3rem;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ctn-ownsership>div {
+    width: 50%;
+}
+
+#privacy {
+    display: inline-flex;
+    align-items: center;
+}
+
+#power {
+    text-align: right;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1199px) {
+    .ctn-company section>div {
+        width: 50%;
+    }
+
+    .ctn-company section>div:first-child {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .ctn-company section {
+        display: grid;
+    }
+
+    .ctn-company section div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .ctn-company section div img {
+        display: block;
+        margin: auto;
+    }
+
+    .ctn-company section>div:first-child {
+        order: 2 !important;
+    }
+
+    .ctn-company section>div:nth-child(2) {
+        order: 1 !important;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .ctn-navigation section:not(:first-child) {
+        display: none;
+    }
+    
+    .ctn-navigation.responsive {
+        position: relative;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .ctn-navigation.responsive .btn-hamburguer {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .ctn-navigation.responsive section, .ctn-navigation.responsive a, .ctn-navigation.responsive button {
+        display: block;
+    }
+
+    .ctn-navigation a.btn-hamburguer {
+        float: right;
+        display: block;
+        margin: 20px;
+    }
+
+    #icon-menu {
+        width: 30px;
+        height: 30px;
+        color: #2fa38e;
+    }
+
+    .ctn-menus {
+        width: 100%;
+    }
+
+    nav {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px auto;
+    }
+
+    .ctn-view-jobs {
+        text-align: center;
+        margin: auto;
+    }
+
+    #btn-view-jobs {
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .ctn-more {
+        display: block;
+        margin: auto;
+    }
+
+    .ctn-more section {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .ctn-testimony div, .ctn-journey div {
+        top: unset;
+        left: unset;
+        transform: unset;
+        width: unset !important;
+        position: unset !important;
+    }
+}
